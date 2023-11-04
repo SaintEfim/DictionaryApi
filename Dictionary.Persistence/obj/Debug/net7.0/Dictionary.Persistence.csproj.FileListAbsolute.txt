@@ -1,0 +1,17 @@
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\Dictionary.Persistence.csproj.AssemblyReference.cache
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\Dictionary.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\Dictionary.Persistence.AssemblyInfoInputs.cache
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\Dictionary.Persistence.AssemblyInfo.cs
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\Dictionary.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\user\source\Dictionary\Dictionary.Persistence\bin\Debug\net7.0\Dictionary.Persistence.deps.json
+C:\Users\user\source\Dictionary\Dictionary.Persistence\bin\Debug\net7.0\Dictionary.Persistence.dll
+C:\Users\user\source\Dictionary\Dictionary.Persistence\bin\Debug\net7.0\Dictionary.Persistence.pdb
+C:\Users\user\source\Dictionary\Dictionary.Persistence\bin\Debug\net7.0\Dictionary.Domain.dll
+C:\Users\user\source\Dictionary\Dictionary.Persistence\bin\Debug\net7.0\Dictionary.Domain.pdb
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\Dictionary.Persistence.csproj.CopyComplete
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\Dictionary.Persistence.dll
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\refint\Dictionary.Persistence.dll
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\Dictionary.Persistence.pdb
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\ref\Dictionary.Persistence.dll
+C:\Users\user\source\Dictionary\Dictionary.Persistence\bin\Debug\net7.0\Dictionary.Persistence.runtimeconfig.json
+C:\Users\user\source\Dictionary\Dictionary.Persistence\obj\Debug\net7.0\Dictionary.Persistence.genruntimeconfig.cache

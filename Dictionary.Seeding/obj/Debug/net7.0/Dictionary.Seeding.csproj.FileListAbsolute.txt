@@ -1,0 +1,17 @@
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\Dictionary.Seeding.csproj.AssemblyReference.cache
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\Dictionary.Seeding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\Dictionary.Seeding.AssemblyInfoInputs.cache
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\Dictionary.Seeding.AssemblyInfo.cs
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\Dictionary.Seeding.csproj.CoreCompileInputs.cache
+C:\Users\user\source\Dictionary\Dictionary.Seeding\bin\Debug\net7.0\Dictionary.Seeding.deps.json
+C:\Users\user\source\Dictionary\Dictionary.Seeding\bin\Debug\net7.0\Dictionary.Seeding.dll
+C:\Users\user\source\Dictionary\Dictionary.Seeding\bin\Debug\net7.0\Dictionary.Seeding.pdb
+C:\Users\user\source\Dictionary\Dictionary.Seeding\bin\Debug\net7.0\Dictionary.Domain.dll
+C:\Users\user\source\Dictionary\Dictionary.Seeding\bin\Debug\net7.0\Dictionary.Persistence.dll
+C:\Users\user\source\Dictionary\Dictionary.Seeding\bin\Debug\net7.0\Dictionary.Domain.pdb
+C:\Users\user\source\Dictionary\Dictionary.Seeding\bin\Debug\net7.0\Dictionary.Persistence.pdb
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\Dictionary.Seeding.csproj.CopyComplete
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\Dictionary.Seeding.dll
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\refint\Dictionary.Seeding.dll
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\Dictionary.Seeding.pdb
+C:\Users\user\source\Dictionary\Dictionary.Seeding\obj\Debug\net7.0\ref\Dictionary.Seeding.dll
