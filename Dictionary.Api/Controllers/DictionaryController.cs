@@ -38,12 +38,12 @@ namespace SaintEfim.MinimalApi.Controller
         }
 
         [HttpPost]
-        public async Task<IActionResult> InsertDictionaryAsync([FromBody] CreateGermanRussianDictionary dictionary)
+        public async Task<IActionResult> InsertDictionaryAsync([FromBody] CreateGermanRussianDictionaryDto dictionary)
         {
             var germanRussianDictionary = _mapper.Map<GermanRussianDictionary>(dictionary);
             await _repository.InsertDictionaryAsync(germanRussianDictionary);
             await _repository.SaveAsync();
-            var result = _mapper.Map<ResultGermanRussianDictionary>(germanRussianDictionary);
+            var result = _mapper.Map<ResultGermanRussianDictionaryDto>(germanRussianDictionary);
             return Ok(result);
         }
 

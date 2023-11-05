@@ -11,11 +11,11 @@ namespace StoresAPI
             CreateMap<GermanRussianDictionary, GermanRussianDictionaryDto>();
             CreateMap<GermanRussianDictionaryDto, GermanRussianDictionary>();
 
-            CreateMap<GermanRussianDictionary, CreateGermanRussianDictionary>();
-            CreateMap<CreateGermanRussianDictionary, GermanRussianDictionary>();
+            CreateMap<GermanRussianDictionary, CreateGermanRussianDictionaryDto>();
+            CreateMap<CreateGermanRussianDictionaryDto, GermanRussianDictionary>();
 
-            CreateMap<GermanRussianDictionary, ResultGermanRussianDictionary>();
-            CreateMap<ResultGermanRussianDictionary, GermanRussianDictionary>();
+            CreateMap<GermanRussianDictionary, ResultGermanRussianDictionaryDto>();
+            CreateMap<ResultGermanRussianDictionaryDto, GermanRussianDictionary>();
         }
     }
 }

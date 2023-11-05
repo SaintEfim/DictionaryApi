@@ -1,6 +1,6 @@
 ﻿namespace Dictionary.Api.Models
 {
-    public class ResultGermanRussianDictionary
+    public class ResultGermanRussianDictionaryDto
     {
         public int Id { get; set; }
     }

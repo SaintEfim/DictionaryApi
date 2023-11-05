@@ -2,7 +2,7 @@
 
 namespace Dictionary.Api.Models
 {
-    public class CreateGermanRussianDictionary
+    public class CreateGermanRussianDictionaryDto
     {
         [Required]
         public string RussianWord { get; set; }
