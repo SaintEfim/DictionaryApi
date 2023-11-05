@@ -40,6 +40,9 @@ namespace Dictionary.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("text");
+
                     b.Property<string>("RussianTranslation")
                         .IsRequired()
                         .HasColumnType("text");

@@ -22,7 +22,8 @@ namespace Dictionary.Persistence.Migrations
                     RussianTranslation = table.Column<string>(type: "text", nullable: false),
                     GermanTranslation = table.Column<string>(type: "text", nullable: false),
                     Comments = table.Column<string>(type: "text", nullable: true),
-                    EntryDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    EntryDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ImageUrl = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {

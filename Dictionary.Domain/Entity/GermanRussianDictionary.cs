@@ -31,5 +31,6 @@ namespace Dictionary.Domain.Entity
                 ? DateTime.SpecifyKind(value, DateTimeKind.Utc)
                 : value.ToUniversalTime();
         }
+        public string? ImageUrl { get; set; }
     }
 }
