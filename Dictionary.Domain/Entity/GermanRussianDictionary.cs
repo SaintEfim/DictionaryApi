@@ -18,7 +18,6 @@ namespace Dictionary.Domain.Entity
 
         [Required]
         public string GermanTranslation { get; set; }
-
         public string? Comments { get; set; }
 
         private DateTime _entryDate;
@@ -31,6 +30,6 @@ namespace Dictionary.Domain.Entity
                 ? DateTime.SpecifyKind(value, DateTimeKind.Utc)
                 : value.ToUniversalTime();
         }
-        public string? ImageUrl { get; set; }
+        public byte[]? Photo { get; set; }
     }
 }

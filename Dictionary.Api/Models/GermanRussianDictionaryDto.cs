@@ -30,5 +30,7 @@ namespace Dictionary.Api.Models
                 ? DateTime.SpecifyKind(value, DateTimeKind.Utc)
                 : value.ToUniversalTime();
         }
+
+        public byte[]? Photo { get; set; }
     }
 }

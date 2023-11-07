@@ -23,7 +23,7 @@ namespace Dictionary.Persistence.Migrations
                     GermanTranslation = table.Column<string>(type: "text", nullable: false),
                     Comments = table.Column<string>(type: "text", nullable: true),
                     EntryDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    ImageUrl = table.Column<string>(type: "text", nullable: true)
+                    Photo = table.Column<byte[]>(type: "bytea", nullable: true)
                 },
                 constraints: table =>
                 {

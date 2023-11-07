@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Dictionary.Persistence.Migrations
 {
     [DbContext(typeof(GermanRussianDictionaryDbContext))]
-    [Migration("20231105074310_init")]
+    [Migration("20231107095315_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -43,8 +43,8 @@ namespace Dictionary.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("ImageUrl")
-                        .HasColumnType("text");
+                    b.Property<byte[]>("Photo")
+                        .HasColumnType("bytea");
 
                     b.Property<string>("RussianTranslation")
                         .IsRequired()

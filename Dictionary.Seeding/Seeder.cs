@@ -2,13 +2,16 @@
 using Dictionary.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
+using System.IO;
+using System;
+using System.Threading.Tasks;
 
 namespace Dictionary.Seeding
 {
     public class Seeder
     {
         private readonly GermanRussianDictionaryDbContext _context;
-        public Seeder(GermanRussianDictionaryDbContext context) 
+        public Seeder(GermanRussianDictionaryDbContext context)
         {
             _context = context;
         }
@@ -23,15 +26,40 @@ namespace Dictionary.Seeding
                 // Проверяем, существует ли файл
                 if (File.Exists(jsonFilePath))
                 {
-                    // Считываем данные из JSON-файла
-                    string jsonData = await File.ReadAllTextAsync(jsonFilePath);
+                    if (!_context.Dictionaries.Any())
+                    {
+                        // Считываем данные из JSON-файла
+                        string jsonData = await File.ReadAllTextAsync(jsonFilePath);
 
-                    // Десериализуем JSON в объекты вашей модели данных
-                    var data = JsonSerializer.Deserialize<GermanRussianDictionary[]>(jsonData);
+                        // Десериализуем JSON в объекты вашей модели данных
+                        var data = JsonSerializer.Deserialize<GermanRussianDictionary[]>(jsonData);
 
-                    // Добавляем данные в контекст базы данных и сохраняем их
-                    _context.AddRange(data);
-                    await _context.SaveChangesAsync();
+                        // Путь к папке с фотографиями
+                        string photoFolderPath = "C:\\Users\\user\\source\\Dictionary\\Photo";
+
+                        // Получаем все файлы из папки
+                        string[] photoFiles = Directory.GetFiles(photoFolderPath);
+
+                        // Перебираем все файлы
+                        for (int i = 0; i < photoFiles.Length && i < data.Length; i++)
+                        {
+                            if (data[i].Photo == null)
+                            {
+                                byte[] imageBytes = File.ReadAllBytes(photoFiles[i]);
+
+                                // Запись изображения в поле Photo
+                                data[i].Photo = imageBytes;
+                            }
+                        }
+
+                        // Добавляем данные в контекст базы данных и сохраняем их
+                        _context.AddRange(data);
+                        await _context.SaveChangesAsync();
+                    }
+                    else
+                    {
+                        Console.WriteLine("База данных уже содержит данные. Записи не добавлены.");
+                    }
                 }
                 else
                 {
