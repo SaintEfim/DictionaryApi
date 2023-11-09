@@ -5,6 +5,7 @@ using System.Text.Json;
 using System.IO;
 using System;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace Dictionary.Seeding
 {
@@ -20,22 +21,23 @@ namespace Dictionary.Seeding
         {
             try
             {
-                // Путь к вашему JSON-файлу с данными
-                string jsonFilePath = "C:\\Users\\user\\source\\Dictionary\\Dictionary.Seeding\\DataBase\\dictionary.json";
-                Console.WriteLine(jsonFilePath);
+                var appDir = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"..\..\..\..\"));
+                var fullPath = Path.Combine(Path.Combine(appDir, @"Dictionary.Seeding\DataBase\Dictionary.json"));
+
                 // Проверяем, существует ли файл
-                if (File.Exists(jsonFilePath))
+                if (File.Exists(fullPath))
                 {
                     if (!_context.Dictionaries.Any())
                     {
                         // Считываем данные из JSON-файла
-                        string jsonData = await File.ReadAllTextAsync(jsonFilePath);
+                        string jsonData = await File.ReadAllTextAsync(fullPath);
 
                         // Десериализуем JSON в объекты вашей модели данных
                         var data = JsonSerializer.Deserialize<GermanRussianDictionary[]>(jsonData);
 
                         // Путь к папке с фотографиями
-                        string photoFolderPath = "C:\\Users\\user\\source\\Dictionary\\Photo";
+                        var photoFolderPath = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"..\..\..\..\"));
+                        var fullphotoFolderPath = Path.Combine(Path.Combine(appDir, @"Photo"));
 
                         // Получаем все файлы из папки
                         string[] photoFiles = Directory.GetFiles(photoFolderPath);
